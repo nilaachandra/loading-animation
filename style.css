@@ -1,0 +1,22 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loading-animation{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 20px solid #fcd200;
+    border-top: 20px solid rgb(0,0,255);
+    animation: spinAnimate 1.5s ease-in-out infinite normal;
+}
+@keyframes spinAnimate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
